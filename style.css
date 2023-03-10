@@ -48,6 +48,44 @@
         overflow-y: auto;
     }
 
+    .container{
+        margin-inline: auto;
+        padding: 2rem 1rem 3rem;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: .5rem;
+        row-gap: 1rem;
+    }
+
+    .card{
+        position: relative;
+        flex: 0 0 240px;
+        width: calc((100% - .5rem * 6) / 7);
+    }
+
+    .card img{
+        display: block;
+        width: 100%;
+    }
+
+    .card .tag{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: .5rem;
+    }
+
+    .tag{
+        color: aliceblue;
+        background-color: gray;
+        opacity: 60%;
+        
+    }
+
 
     .image-grid{
 
@@ -81,7 +119,7 @@
    }
 
 
-   
+
 
    .bottombar *{
     color: whitesmoke;
